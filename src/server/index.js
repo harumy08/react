@@ -5,7 +5,7 @@ import path from 'path';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import open from 'open';
-import exphbs from 'express-handlebars';
+//import exphbs from 'express-handlebars';
 
 // Webpack Configuration
 import webpackConfig from '../../webpack.config.dev';
@@ -21,7 +21,7 @@ const webpackCompiler = webpack(webpackConfig);
 
 // Webpack Middlwares
 app.use(webpackDevMiddleware(webpackCompiler));
-app.use(webpackDevMiddleware(webpackCompiler));
+app.use(webpackHotMiddleware(webpackCompiler));
 
 
 //Sending all traffic to React

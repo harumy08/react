@@ -9,7 +9,7 @@ import AppRoutes from './routes';
 //Assets
 import './index.css';
 
-import registerServiceWorker from './registerServiceWorker';
+//import registerServiceWorker from './registerServiceWorker';
 
 render(
 	<Router>
@@ -18,4 +18,3 @@ render(
 	document.getElementById('root')
 	);
 
-registerServiceWorker();

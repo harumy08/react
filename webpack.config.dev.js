@@ -6,7 +6,7 @@ import path from 'path';
 const PATHS = {
   index: path.join(__dirname, 'src/index'),
   build: path.join(__dirname, '/dist'),
-  src: path.join(__dirname, 'src')
+  base: path.join(__dirname, 'src')
 };
 
 // Webpack Config
@@ -29,7 +29,7 @@ export default{
   loaders: [{
   	test: /\.js?$/,
   	loaders: ['babel-loader'],
-  	include: PATHS.src
+  	include: PATHS.base
   },
   {
   	test: /(\.css)$/,
